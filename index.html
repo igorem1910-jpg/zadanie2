@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator usług</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <h1>Kalkulator usług</h1>
+  <div>
+    <a href="index.html">Strona główna</a>
+    <a href="newsletter.html">Newsletter</a>
+    <a href="pomoc.html">Pomoc</a>
+    <a href="regulamin.html">Regulamin</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2>Formularz wyceny</h2>
+
+    <input type="text" id="name" placeholder="Imię klienta">
+
+    <select id="service">
+      <option value="0">Wybierz usługę</option>
+      <option value="100">Strona internetowa 100zł/h</option>
+      <option value="200">Sklep internetowy 200zł/h</option>
+      <option value="150">SEO 150zł/h</option>
+    </select>
+
+    <input type="number" id="hours" placeholder="Liczba godzin">
+
+    <button id="calculateBtn">Oblicz koszt</button>
+  </div>
+
+  <div class="card result-card">
+    <h2>Wynik</h2>
+    <div id="result">0 zł</div>
+  </div>
+
+  <div class="card">
+    <h2>Historia</h2>
+    <ul id="history"></ul>
+  </div>
+</div>
+
+</body>
+</html>
